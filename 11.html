@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formulario en HTML</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+    <body>
+        <h2>Formulario de ejemplo</h2>
+        <form name="elFormulario" action="/una/ruta" method="post" onsubmit="return validaciones()">
+            <label for="nombre">Ingrese su Nombre</label>
+            <input id="nombre" type="text" value="" />
+            <br />
+            <label for="apellido">Ingrese su Apellido</label>
+            <input id="apellido" type="text" value="" />
+            <br />
+            <input id="materia" type="radio" value="" />
+            <label for="materia">Me gusta PNT1 (por ahora)</label>
+            <br />
+            <input type="submit" value="Enviar Formulario"/>
+        </form>
+
+        <script>
+            function validaciones()
+            {               
+                var cajaDeTextoDelNombre = document.getElementById('nombre');
+                if (cajaDeTextoDelNombre.value == '') {                    
+                    alert('Debe ingresar su nombre!');
+                    return false;
+                }               
+
+                return true;
+            }
+        </script>
+    </body>
+</html>
