@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primer HTML</title>
+    <meta charset="utf-8">
+    <!-- esto es un comentario -->
+    <!-- <link rel="stylesheet" href="estilos1.css"> -->
+    </head>
+    <body>
+        <h1>Hola Mundo!</h1>
+        <h2>Un subtitulo</h2>
+        <h3>Otro subtitulo</h3>
+        <p>Un parrafo con informacion importante</p>
+        <label>Ingrese su Nombre</label>
+        <input type="text" name="Nombre" value="" />
+        <button type="button" onclick="mensaje()">Presionar!</button>
+
+        <script>
+            function mensaje()
+            {
+                var elementos = document.getElementsByName('Nombre');
+                var primerElemento = elementos[0];
+                alert('Hola ' + primerElemento.value + ' voy a cambiar tu nombre por Juan Perez');
+                primerElemento.value = 'Juan Perez';
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    background-color: red;
+}
+
+h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;    
+}
+
+.unaClase {
+    font-family:Arial, Helvetica, sans-serif;
+    color: aqua;
+}
+
+#UnId {
+    color: brown;
+}
